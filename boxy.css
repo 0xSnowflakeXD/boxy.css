@@ -1,5 +1,8 @@
-.generalbox {
+div .generalbox {
   background-color: #121212;
   color: #FDFDFD;
-	
+	font-family: sans-serif;
+	border-color: #323232;
+	border-style: solid;
+	border-width: 1px;
 }

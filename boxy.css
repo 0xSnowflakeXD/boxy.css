@@ -1,10 +1,18 @@
 div .generalbox {
-  background-color: #121212;
-  color: #FDFDFD;
+  background-color: var(--gbbclr);
+  color: var(--gbclr);
 	font-family: sans-serif;
 	border-color: #323232;
 	border-style: solid;
 	border-width: 1px;
 }
 
-div.generalbox.light
+div.generalbox.light {
+  --gbclr: #060606;
+  --gbbclr: #FDFDFD
+}
+
+div.generalbox.dark {
+  --gbclr: #060606;
+  --gbbclr: #FDFDFD
+}

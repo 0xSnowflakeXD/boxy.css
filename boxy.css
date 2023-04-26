@@ -1,6 +1,20 @@
+@charset "UTF-8";
+@keyframe linkfade-easein {
+  0% {color:#2b78d6;}
+  70% {color:#2b95d6;}
+  100% {color:#2b78d6;}
+}
+
+:root {
+  --gbclr-l: #060606;
+  --gbbclr-l: #FDFDFD;
+  --gbclr-d: #FDFDFD;
+  --gbbclr-d: #060606;
+}
+
 div .generalbox {
-  background-color: var(--gbbclr);
-  color: var(--gbclr);
+  background-color: var(--gbbclr-d); /* Use default dark variant */
+  color: var(--gbclr-d);
 	font-family: sans-serif;
 	border-color: #323232;
 	border-style: solid;
@@ -8,11 +22,23 @@ div .generalbox {
 }
 
 div.generalbox.light {
-  --gbclr: #060606;
-  --gbbclr: #FDFDFD
+  background-color: var(--gbbclr-l);
+  color: var(--gbbclr-l);
 }
 
 div.generalbox.dark {
-  --gbclr: #060606;
-  --gbbclr: #FDFDFD
+  background-color: var(--gbbclr-f);
+  color: var(--gbclr-d);
+}
+
+div.generalbox.light a {
+  font-family: sans-serif;
+  color: #3b96f7;
+  text-decoration: underline;
+}
+
+div.generalbox.dark a {
+  font-family: sans-serif;
+  color: #2b7ed6;
+  text-decoration: underline;
 }
